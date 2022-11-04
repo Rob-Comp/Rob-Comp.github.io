@@ -1,0 +1,14 @@
+{
+  "name": "3ra-preentrega",
+  "version": "1.0.3",
+  "description": "mi tercera entrega de mi primer proyecto en coder house",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/styles.scss assets/styles.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  
+  "author": "Robert Correa",
+  "license": "ISC"
+}
