@@ -1,0 +1,104 @@
+$color-fuentes: #a9a9a9;
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #707070;
+    font-size: small;
+}
+
+#logo_index {
+    padding-bottom: 15px;
+    margin-top: 10px;
+    animation-name: logoindex;
+    animation-duration: 2s;
+}
+@keyframes logoindex {
+    0% {opacity: 0%; animation-fill-mode: forwards;}
+    100% {opacity: 100%;}
+}
+nav {
+    text-align: center;
+    a {
+        padding: 20px;
+        font-weight: lighter;
+        color: $color-fuentes;
+        font-size: small;
+        text-decoration: underline;
+        text-decoration-color: white;
+        text-align: center;
+
+            @media (max-width: 576px) {
+                font-size: x-small;
+        }
+        &:hover {
+            font-weight: bold;
+            color: $color-fuentes;
+        }
+    }
+}
+.portada_index {
+    overflow: hidden;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+    img {
+        width: 90%;
+    }
+}
+.p_index {
+    display: block;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+}
+.img_row {
+    padding: 5px;
+}
+footer {
+    div {
+        padding: 10px;
+        margin-top: 30px;
+        background-color: #ffffe8;
+
+        .logo_footer {
+            width: 20%;
+            margin-left: 10%;
+
+            @media (max-width: 576px) {
+                width: 150px;
+            }
+        }
+    }
+    p {
+        margin-left: 10%;
+    }
+    h2 {
+        font-size: large;
+        font-style: italic;
+        margin-left: 10%;
+    }
+    h3 {
+        margin-left: 10%;
+    }
+}
+// Aqui empieza la pagina "Quienes Somos"
+
+// Aqui empieza portafolio.html
+.img_block {
+    margin: 15px;
+    margin-left: auto 30px;
+    margin-right: auto 30px;
+
+    .img_portafolio {
+        padding-bottom: 30px;
+    }
+
+    @media (max-width: 576px) {
+        .img_hidden {
+            visibility: hidden;
+            display: none;
+        }
+    }
+}
+// Aqui empieza contacto.html
