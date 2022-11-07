@@ -1,4 +1,5 @@
 $color-fuentes: #a9a9a9;
+$color-contacto: #2699FB;
 
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -7,8 +8,8 @@ body {
 }
 
 #logo_index {
-    padding-bottom: 15px;
-    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-top: 15px;
     animation-name: logoindex;
     animation-duration: 2s;
 }
@@ -19,7 +20,6 @@ body {
 nav {
     text-align: center;
     a {
-        padding: 20px;
         font-weight: lighter;
         color: $color-fuentes;
         font-size: small;
@@ -38,7 +38,7 @@ nav {
 }
 .portada_index {
     overflow: hidden;
-    margin-top: 15px;
+    padding-top: 15px;
     margin-bottom: 15px;
 
     img {
@@ -53,7 +53,7 @@ nav {
     text-align: center;
 }
 .img_row {
-    padding: 5px;
+    padding-bottom: 15px;
 }
 footer {
     div {
@@ -82,23 +82,105 @@ footer {
         margin-left: 10%;
     }
 }
+// Aqui empieza la pagina servicios.html
+.contenido_servicios {
+    text-align: center;
+
+    h1 {
+        font-size: 4vw;
+    }
+
+    img {
+        border-radius: 8px;
+        width: 80%;
+        height: auto;
+        margin-bottom: 2em;
+        }
+    .img_servicios_final {
+        margin-bottom: 1em;
+    }
+}
+
 // Aqui empieza la pagina "Quienes Somos"
+.contenido_quienes-somos {
+
+    .fila1_quienes-somos {
+        margin-top: 30px;
+
+        img {
+            width: 80%;
+            margin-bottom: 25px;
+        }
+    }
+.fila2_quienes-somos {
+    margin-top: 30px;
+}
+}
 
 // Aqui empieza portafolio.html
 .img_block {
-    margin: 15px;
-    margin-left: auto 30px;
-    margin-right: auto 30px;
-
-    .img_portafolio {
-        padding-bottom: 30px;
-    }
-
-    @media (max-width: 576px) {
-        .img_hidden {
-            visibility: hidden;
-            display: none;
+        margin-left: 30px;
+        margin-right: 30px;
+    
+        .img_portafolio {
+            padding: 15px;
+        }
+    
+        @media (max-width: 991px) {
+            .img_hidden {
+                visibility: hidden;
+                display: none;
+            }
         }
     }
-}
+
 // Aqui empieza contacto.html
+.contenido_contacto {
+    margin-top: 15px;
+
+        .contacto_izquierdo {
+            padding: 30px;
+            border-style: solid;
+            border-width: 3px;
+            border-color: $color-contacto;
+
+            h1 {
+                color: $color-contacto;
+                text-align: center;
+            }
+            .input_grupo {
+                input {
+                    width: 80%;
+                    height: 50px;
+                    margin-bottom: 20px;
+                    border-style: hidden;
+                    font-size: larger;
+                    color: $color-contacto;
+                }
+                button {
+                    width: 100%;
+                    background: $color-contacto;
+                    border: none;
+                    outline: none;
+                    height: 60px;
+                    font-size: larger;
+                    color: #FFFFE8;
+                    text-align: center;
+                }
+                ::placeholder {
+                    color: $color-contacto;
+                }
+            }
+        }
+        .contacto_derecho {
+
+            h2 {
+                font-size: medium;
+                margin-bottom: 2em;
+            }
+            @media (max-width: 768px) {
+                margin-top: 20px;
+                text-align: center;
+            }
+        }
+}
