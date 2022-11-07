@@ -4,6 +4,8 @@ body {
   font-size: small; }
 
 #logo_index {
+  width: 10em;
+  height: auto;
   margin-bottom: 10px;
   margin-top: 15px;
   animation-name: logoindex;
@@ -15,7 +17,7 @@ body {
     animation-fill-mode: forwards; }
   100% {
     opacity: 100%; } }
-
+    
 nav {
   text-align: center; }
   nav a {
